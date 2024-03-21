@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
+:root{
+    --font: #000;
+    --background-color: #feefdd;
+    --h1-color: #5C1F1D;
+    --h1-span: #DCA839;
+    --h2-color: #BB563A;
+    --text-area-color: #fff;
+    --color-button-encriptar: #794140;
+    --color-button-desencriptar: #D6390D;
+    --color-button-copiar: #F1BA41;
+    --font-color-button: #fff7ed;
+    --color-footer: #560301;
+    --aviso-font-color: #636363;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sanchez', serif;
+    text-decoration: none;
+    background: var(--background-color);
+}
+
+body{
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.title-header{
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.titulo{
+    color: var(--h1-color);
+}
+
+.destaque-titulo{
+    color: var(--h1-span);
+}
+
+.subtitulo{
+    color: var(--h2-color);
+}
+
+/* conteudo principal */
+main {
+    padding-top: 2rem;
+    width: max-content;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: auto;
+    gap: 3.5rem;
+}
+
+main > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
+    gap: 1rem;
+}
+
+textarea{
+    resize: none;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline: none;
+    color: var(--font);
+    background-color: var(--text-area-color);
+    border: none;
+    border-radius: 1.5rem;
+}
+
+/* section 1 */
+
+.encriptador{
+    min-width: 50vw;
+}
+
+main section textarea, main section .container-texto {
+    height: 50vh;
+}
+
+.aviso{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 0.2rem;
+}
+
+.texto-aviso{
+    width: 100%;
+    font-size: 0.8rem;
+    color: var(--aviso-font-color);
+}
+
+.botoes-encriptador{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    
+}
+
+.encriptar-botao, .desencriptar-botao{
+    width: 13rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--font-color-button);
+}
+
+.encriptar-botao{
+    background: var(--color-button-encriptar);
+}
+
+.desencriptar-botao{
+    background: var(--color-button-desencriptar);
+}
+
+
+/* section 2 */
+
+.texto-encriptado {
+    min-width: 30vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 2px dashed var(--h1-color);
+    border-radius: 12px;
+}
+
+.indi-img{
+    width: 50%;
+    border-radius: 1.5rem;
+}
+
+.msg-n-encontrada{
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: var(--font);
+}
+
+.msg-instrução{
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: var(--font);
+}
+
+
+.copiar-botao{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--font);
+    background: var(--color-button-copiar);
+}
+
+.botoes-container {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.msg-final {
+    width: 100%;
+}
+
+
+
+/* rodapé */
+.fixed-footer {
+    padding: 0.5rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.8rem;
+    color: var(--font);
+    background-color: var(--color-footer);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .copyright{
+    color: var(--font-color-button);
+    background-color: var(--color-footer);
+  }
+
+  .footer-contato{
+    background: var(--color-footer);
+  }
+
+  img.contato{
+    background: var(--color-footer);
+    width: 2rem;
+  }
+
+  a.icones-links-redes{
+    background: var(--color-footer);
+  }
+

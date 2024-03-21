@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto | T6-ONE</title>
+    <link rel="shortcut icon" href="assets/Iconarchive-Egypt-Game-Board.32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/design.css">
+    <script src="encriptador.js "></script>
+    
+</head>
+
+<body>
+    <header class="title-header">
+
+        <div class="logo-cabeçalho">
+            <a href="https://www.alura.com.br/" target="_blank">
+                <img src="assets/logoAlura.png" alt="Letra A estilizada como logotipo da escola alura" class="logo">
+            </a>
+        </div>
+
+        <div class="h1-h2">
+            <h1 class="titulo">Challenge ONE <span class="destaque-titulo">Iniciante em Programação</span></h1>
+            <h2 class="subtitulo">Encriptador e Desencriptador de texto</h2>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="encriptador">
+            <textarea id="input" class="submit-text-encriptar" placeholder="Digite seu texto"></textarea>
+            <div class="botoes-container">
+                <div class="aviso">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="importante" class="img-aviso">
+                    <p class="texto-aviso">Apenas letras minúsculas e sem acentos.</p>
+                </div>
+                <div class="botoes-encriptador">
+                    <button onclick="encriptar()" class="encriptar-botao">Encriptar</button>
+                    <button onclick="desencriptar()" class="desencriptar-botao">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="texto-encriptado">
+            <div id="semTexto" class="container-texto">
+                <img src="assets/indi-fofo2.png"
+                    alt="Ilustração fofa de um Mini Indiana Jones segurando uma placa egípcia com hieróglifos"
+                    class="indi-img">
+                <p class="msg-n-encontrada">Nenhuma mensagem encontrada</p>
+                <p class="msg-instrução">Digite um texto que você deseja encriptar ou desencriptar</p>
+            </div>
+            <div id="comTexto" class="msg-final hidden">
+                <textarea id="output" type="mensagem" readonly></textarea>
+            </div>
+            <div class="botoes-container">
+                <button onclick="copiarTexto()" type="submit" class="copiar-botao">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed-footer">
+            <p class="copyright">&copy; copyright 2024 | Desenvolvido por Carla Cristina M. Rodrigues</p>
+        <div class="footer-contato">
+            <a href="https://www.instagram.com/carla.rodrigues_dev/" target="_blank" class="icones-links-redes">
+                <img src="assets/insta-footer.png" class="contato" alt="icone de atalho para o instagram da desenvolvedora, Carla Rodrigues"></a>
+
+            <a href="https://www.linkedin.com/in/carla-rodrigues-dev/" target="_blank" class="icones-links-redes">
+                <img src="assets/linkedin-footer.png" class="contato" alt="icone de atalho para o linkedIn da desenvolvedora, Carla Rodrigues"></a>
+
+            <a href="https://github.com/cah-rodrigues" target="_blank" class="icones-links-redes">
+                <img src="assets/github-footer.png" class="contato" alt="icone de atalho para o github da desenvolvedora, Carla Rodrigues"></a>
+
+            <a href="https://portfolio-carla-eight.vercel.app/" target="_blank" class="icones-links-redes">
+                <img src="assets/portfolioheart-footer.png" class="contato" alt="icone de atalho para o portfólio online da desenvolvedora, Carla Rodrigues"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
